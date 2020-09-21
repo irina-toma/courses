@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">OSC</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#" id="nav-home">Home</a></li>
+                        <li><a href="#" id="nav-courses">Courses</a></li>
+                        <li><a href="prices.html">Prices</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" id="nav-my-profile">My profile</a></li>
+                        <li><a href="auth.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <div class="nav-desc">
+                <h1>Welcome to Oxford Summer Courses</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem
+                    labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque.
+                    Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore
+                    sequi harum eos voluptatibus animi labore officiis minus laboriosam</p>
+            </div>
+        </section>
+        <div style="height: 1000px">
+            <div id="most-popular" class="container mt-5">
+                <div class="row d-flex justify-content-center">
+                    <h1 class="p-4">Our most popular courses</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- TODO: generate cards dynamically based on MongoDB data -->
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-center">
+                                <h2 class="">Domain 1</h2>
+                            </div>
+                            <img src="https://source.unsplash.com/random/300x200?art" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Course 1</span>
+                                        <span>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>4.5/5</span>
+                                        </span>
+                                    </div>
+                                </h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="#" class="btn btn-lg btn-block btn-primary">View more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-center">
+                                <h2 class="">Domain 2</h2>
+                            </div>
+                            <img src="https://source.unsplash.com/random/300x200?education" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Course 2</span>
+                                        <span>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>4.1/5</span>
+                                        </span>
+                                    </div>
+                                </h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="#" class="btn btn-lg btn-block btn-primary">View more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-center">
+                                <h2 class="">Domain 3</h2>
+                            </div>
+                            <img src="https://source.unsplash.com/random/300x200?science" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Course 3</span>
+                                        <span>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>3.9/5</span>
+                                        </span>
+                                    </div>
+
+                                </h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <a href="#" class="btn btn-lg btn-block btn-primary">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="course-details" class="container mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="accordion">
+                            <!-- first domain -->
+                            <div class="card">
+                                <div class="card-header" id="heading1">
+                                    <div class="mb-0 d-flex justify-content-between align-items-center">
+                                        <button class="btn font-medium" data-toggle="collapse" data-target="#collapse1">
+                                            Domain 1
+                                        </button>
+                                        <span class="badge badge-primary badge-pill font-medium">3</span>
+                                    </div>
+                                </div>
+
+                                <div id="collapse1" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body p-0">
+                                        <div class="border-bottom cursor-pointer p-2 font-medium text-primary">Course 1
+                                        </div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 2</div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 3</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- second domain -->
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <div class="mb-0 d-flex justify-content-between align-items-center">
+                                        <button class="btn font-medium collapsed" data-toggle="collapse"
+                                            data-target="#collapse2">
+                                            Domain 2
+                                        </button>
+                                        <span class="badge badge-primary badge-pill font-medium">4</span>
+                                    </div>
+                                </div>
+
+                                <div id="collapse2" class="collapse" data-parent="#accordion">
+                                    <div class="card-body p-0">
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 1</div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 2</div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 3</div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 4</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- third domain -->
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <div class="mb-0 d-flex justify-content-between align-items-center">
+                                        <button class="btn font-medium collapsed" data-toggle="collapse"
+                                            data-target="#collapse3">
+                                            Domain 3
+                                        </button>
+                                        <span class="badge badge-primary badge-pill font-medium">2</span>
+                                    </div>
+                                </div>
+
+                                <div id="collapse3" class="collapse" data-parent="#accordion">
+                                    <div class="card-body p-0">
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 1</div>
+                                        <div class="border-bottom cursor-pointer p-2 font-medium">Course 2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <h1>Course 1</h1>
+                        <div class="row p-0">
+
+                            <img class="ml-4" src="https://source.unsplash.com/random/300x200?education">
+
+                            <div class="col font-medium">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <p class="font-medium mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-warning btn-lg">Apply now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+    </header>
+</body>
+
+</html>
